@@ -308,10 +308,10 @@
 // //for mx_del_strarr
 // int main() {
 //     char **test = (char **)malloc(sizeof(char *) * 5);
-//     test[0] = mx_strdup("ZHENIYA");
-//     test[1] = mx_strdup("IS");
-//     test[2] = mx_strdup("VERY");
-//     test[3] = mx_strdup("COOL");
+//     test[0] = mx_strdup("Follow");
+//     test[1] = mx_strdup("the");
+//     test[2] = mx_strdup("white");
+//     test[3] = mx_strdup("rabbit");
 //     test[4] = NULL;
 //     mx_del_strarr(&test);
 //     // test = NULL;
