@@ -17,11 +17,15 @@ void *mx_realloc(void *ptr, size_t size) {
     len = mx_strlen(ptr);
     if (size < len) {
         str = malloc(len);
-        mx_memmove(str, ptr, len);
+        if (!str)
+            return NULL;
+        str = mx_memcpy(str, ptr, len);
     }
     else {
         str = malloc(size);
-        mx_memmove(str, ptr, size);
+        if (!str)
+            return NULL;
+        str = mx_memcpy(str, ptr, size);
     }
     free(ptr);
     return str;
