@@ -1,5 +1,11 @@
 #include "libmx.h"
 
+// // //for file to string
+// int main(void) {
+// 	printf("%s\n", mx_file_to_str("test.txt"));
+// 	return 0;
+// }
+
 // // for mx_hex_to_nbr
 // int main(void) {
 // 	printf("%lu\n", mx_hex_to_nbr("ffffff"));
